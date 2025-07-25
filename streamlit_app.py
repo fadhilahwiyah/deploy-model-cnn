@@ -7,7 +7,8 @@ import numpy as np
 st.title("Klasifikasi Citra Batik dengan CNN")
 
 # Muat model CNN
-model = tf.keras.models.load_model("model_batik.h5")
+model = tf.keras.models.load_model("model_batik.h5", compile=False)
+
 
 # Ukuran input yang diharapkan model (ubah sesuai arsitektur modelmu)
 IMAGE_SIZE = (224, 224)

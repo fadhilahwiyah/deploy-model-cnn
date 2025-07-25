@@ -14,7 +14,11 @@ from tensorflow.keras.models import load_model
 st.title("Klasifikasi Citra Batik dengan CNN")
 
 # Muat model CNN
-model = tf.keras.models.load_model("model_batik.h5", compile=False)
+model = load_model(
+    "model_batik.h5",
+    compile=False,
+    custom_objects={'MobileNetV2': MobileNetV2}
+)
 
 
 # Ukuran input yang diharapkan model (ubah sesuai arsitektur modelmu)

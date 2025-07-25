@@ -1,11 +1,13 @@
 import streamlit as st
-!pip install tensorflow
 import tensorflow as tf
 from PIL import Image
 import numpy as np
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+from tensorflow.keras.applications import MobileNetV2
+from tensorflow.keras import layers, models
 
 # Judul halaman
 st.title("Klasifikasi Citra Batik dengan CNN")

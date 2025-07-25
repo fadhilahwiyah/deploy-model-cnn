@@ -8,6 +8,7 @@ from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropou
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.applications import MobileNetV2
 from tensorflow.keras import layers, models
+from tensorflow.keras.models import load_model
 
 # Judul halaman
 st.title("Klasifikasi Citra Batik dengan CNN")
